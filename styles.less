@@ -1,0 +1,251 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+@tesla-logo-white: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmlld0JveD0iMCAwIDIyMC4xMiAyMTkuMTg2NjgiCiAgIGhlaWdodD0iMjE5LjE4NjY4IgogICB3aWR0aD0iMjIwLjEyIgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIj48bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE4Ij48cmRmOlJERj48Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+PGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+PGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48ZGVmcwogICAgIGlkPSJkZWZzNiI+PGNsaXBQYXRoCiAgICAgICBpZD0iY2xpcFBhdGgyMCIKICAgICAgIGNsaXBQYXRoVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aAogICAgICAgICBpZD0icGF0aDE4IgogICAgICAgICBkPSJNIDAsMTY0My45MSBWIDAgaCAxNjUwLjk0IHYgMTY0My45MSB6IiAvPjwvY2xpcFBhdGg+PC9kZWZzPjxnCiAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMzMzMzMzLDAsMCwtMS4zMzMzMzMzLDAsMjE5LjE4NjY3KSIKICAgICBpZD0iZzEwIj48ZwogICAgICAgdHJhbnNmb3JtPSJzY2FsZSgwLjEpIgogICAgICAgaWQ9ImcxMiI+PGcKICAgICAgICAgaWQ9ImcxNCI+PGcKICAgICAgICAgICBjbGlwLXBhdGg9InVybCgjY2xpcFBhdGgyMCkiCiAgICAgICAgICAgaWQ9ImcxNiI+PHBhdGgKICAgICAgICAgICAgIGlkPSJwYXRoMjIiCiAgICAgICAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICAgICAgZD0ibSA4MjUuNTk0LDAgMjMwLjk0NiwxMjk4Ljk0IGMgMjIwLjE2LDAgMjg5LjU2LC0yNC4xNSAyOTkuNjEsLTEyMi42NyAwLDAgMTQ3LjcyLDU1LjA1IDIyMi4yMSwxNjYuODkgLTI5MC42NiwxMzQuNzEgLTU4Mi43MTksMTQwLjc2IC01ODIuNzE5LDE0MC43NiBsIC0xNzAuNDM0LC0yMDcuNTUgMC4zODcsMC4wMyAtMTcwLjQyNiwyMDcuNTUgYyAwLDAgLTI5Mi4wODIsLTYuMDUgLTU4Mi43MDMyLC0xNDAuNzUgNzQuNDQ1MiwtMTExLjg0IDIyMi4xOTEyLC0xNjYuOSAyMjIuMTkxMiwtMTY2LjkgMTAuMDUxLDk4LjU0IDc5LjQ0MiwxMjIuNjYgMjk4LjA5OCwxMjIuODQgTCA4MjUuNTk0LDAiIC8+PHBhdGgKICAgICAgICAgICAgIGlkPSJwYXRoMjQiCiAgICAgICAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICAgICAgZD0ibSA4MjUuNDkyLDE1NDMuODkgYyAyMzQuOTQ4LDEuOCA1MDMuOTE4LC0zNi4zNCA3NzkuMjA4LC0xNTYuMzIgMzYuODEsNjYuMjMgNDYuMjQsOTUuNDkgNDYuMjQsOTUuNDkgLTMwMC45NiwxMTkuMDYgLTU4Mi43OCwxNTkuODEgLTgyNS40NzUsMTYwLjg1IHYgMCBDIDU4Mi43NywxNjQyLjg3IDMwMC45NTMsMTYwMi4xMiAwLDE0ODMuMDYgYyAwLDAgMTMuNDQxNCwtMzYuMDcgNDYuMjQyMiwtOTUuNDkgMjc1LjI2OTgsMTE5Ljk4IDU0NC4yNjE4LDE1OC4xMiA3NzkuMjA2OCwxNTYuMzIgaCAwLjA0MyIgLz48L2c+PC9nPjwvZz48L2c+PC9zdmc+);
+@tesla-logo-black: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjIwLjEyIDIxOS4xODY2OCIgaGVpZ2h0PSIyMTkuMTg2NjgiIHdpZHRoPSIyMjAuMTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiPg0KICA8bWV0YWRhdGEgaWQ9Im1ldGFkYXRhOCI+DQogICAgPHJkZjpSREY+DQogICAgICA8Y2M6V29yayByZGY6YWJvdXQ9IiI+DQogICAgICAgIDxkYzpmb3JtYXQ+DQogICAgICAgICAgaW1hZ2Uvc3ZnK3htbA0KICAgICAgICA8L2RjOmZvcm1hdD4NCiAgICAgICAgPGRjOnR5cGUgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIvPg0KICAgICAgPC9jYzpXb3JrPg0KICAgIDwvcmRmOlJERj4NCiAgPC9tZXRhZGF0YT4NCiAgPGRlZnMgaWQ9ImRlZnM2Ij4NCiAgICA8Y2xpcFBhdGggaWQ9ImNsaXBQYXRoMjAiIGNsaXBQYXRoVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4NCiAgICAgIDxwYXRoIGlkPSJwYXRoMTgiIGQ9Ik0wIDE2NDMuOTFWMGgxNjUwLjk0djE2NDMuOTF6Ii8+DQogICAgPC9jbGlwUGF0aD4NCiAgPC9kZWZzPg0KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLjMzMzMzMzMsMCwwLC0xLjMzMzMzMzMsMCwyMTkuMTg2NjcpIiBpZD0iZzEwIj4NCiAgICA8ZyB0cmFuc2Zvcm09InNjYWxlKDAuMSkiIGlkPSJnMTIiPg0KICAgICAgPGcgaWQ9ImcxNCI+DQogICAgICAgIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwUGF0aDIwKSIgaWQ9ImcxNiI+DQogICAgICAgICAgPHBhdGggaWQ9InBhdGgyMiIgZD0ibTgyNS41OTQgMCAyMzAuOTQ2IDEyOTguOTRjMjIwLjE2IDAgMjg5LjU2LTI0LjE1IDI5OS42MS0xMjIuNjcgMCAwIDE0Ny43MiA1NS4wNSAyMjIuMjEgMTY2Ljg5LTI5MC42NiAxMzQuNzEtNTgyLjcxOSAxNDAuNzYtNTgyLjcxOSAxNDAuNzZsLTE3MC40MzQtMjA3LjU1IDAuMzg3IDAuMDMtMTcwLjQyNiAyMDcuNTVjMCAwLTI5Mi4wODItNi4wNS01ODIuNzAzMi0xNDAuNzUgNzQuNDQ1Mi0xMTEuODQgMjIyLjE5MTItMTY2LjkgMjIyLjE5MTItMTY2LjkgMTAuMDUxIDk4LjU0IDc5LjQ0MiAxMjIuNjYgMjk4LjA5OCAxMjIuODRMODI1LjU5NCAwIiBzdHlsZT0iZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87ZmlsbDojMDAwIi8+DQogICAgICAgICAgPHBhdGggaWQ9InBhdGgyNCIgZD0ibTgyNS40OTIgMTU0My44OWMyMzQuOTQ4IDEuOCA1MDMuOTE4LTM2LjM0IDc3OS4yMDgtMTU2LjMyIDM2LjgxIDY2LjIzIDQ2LjI0IDk1LjQ5IDQ2LjI0IDk1LjQ5LTMwMC45NiAxMTkuMDYtNTgyLjc4IDE1OS44MS04MjUuNDc1IDE2MC44NXYwQzU4Mi43NyAxNjQyLjg3IDMwMC45NTMgMTYwMi4xMiAwIDE0ODMuMDZjMCAwIDEzLjQ0MTQtMzYuMDcgNDYuMjQyMi05NS40OSAyNzUuMjY5OCAxMTkuOTggNTQ0LjI2MTggMTU4LjEyIDc3OS4yMDY4IDE1Ni4zMmgwLjA0MyIgc3R5bGU9ImZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO2ZpbGw6IzAwMCIvPg0KICAgICAgICA8L2c+DQogICAgICA8L2c+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==);
+
+.item-views {
+  background-color: hsl(200, 10%, 10%);
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: @tesla-logo-black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
+}
+
+.pane background-tips .background-message {
+  font-size: 25px;
+  
+  .message {
+    font-weight: 100;
+    color: rgba(157, 165, 180, 1);
+    
+    .keystroke {
+      color: black;
+      font-weight: 400;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px 4px;
+      background: rgba(157, 165, 180, 0.8);
+    }
+  }
+}
+
+.list-tree .icon::before,
+.list-item::before {
+ color: #636d83;
+ opacity: 0.4;
+}
+
+.tree-view,
+.tab-bar,
+.tab,
+.tab-bar .tab .title,
+atom-workspace,
+atom-pane-resize-handle,
+.settings-view .config-menu,
+atom-panel.bottom,
+.project-find,
+.status-bar {
+  background-color: hsl(200, 10%, 12%);
+}
+
+.tab-bar:before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 6px;
+  top: 6px;
+  background-image: @tesla-logo-white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+}
+
+atom-text-editor,
+atom-text-editor[mini],
+.pane .tab-bar .tab.active,
+.pane .tab-bar .tab.active .title,
+.settings-view > .panels,
+atom-pane-container atom-pane .item-views .pane-item {
+  color: #cde;
+  background-color: hsl(200, 10%, 14%);
+}
+
+.pane .tab-bar .tab.active::after {
+  border-bottom-color: transparent;
+}
+
+atom-text-editor::shadow {
+  .cursor {
+     border-color: white;
+  }
+
+  .line.cursor-line {
+    background-color: rgba(153, 187, 255, 0.1);
+  }
+
+  .operator,
+  .storage,
+  .storage.type,
+  .punctuation,
+  .keyword.control,
+  .variable.this,
+  .variable.punctuation,
+  .punctuation.section.embedded,
+  .meta.brace,
+  .meta.delimiter,
+  .meta.method,
+  .support.function.kernel,
+  .keyword.other.special-method,
+  .punctuation.definition.parameters,
+  .constant.other.symbol > .punctuation.section.array,
+  .entity.other.attribute-name.pseudo-class,
+  .entity.name.tag,
+  .source.css,
+  .source.css .property-name.support {
+    color: #6af;
+    // color: #EE384F;
+  }
+
+  .keyword.other {
+    color: red;
+  }
+
+  .string,
+  .string .escape,
+  .markup.link {
+    color: #CCA76B;
+    
+    &.begin,
+    &.end,
+    .escape.slash {
+      color: #907240;
+    }
+  }
+
+  .regexp {
+    color: #c678dd;
+
+    .definition.begin,
+    .punctuation,
+    &.punctuation,
+    &.operator {
+      color: #934DDF;
+    }
+
+    &.assertion,
+    &.control,
+    &.constant,
+    .constant.escape {
+      color: #c678dd;
+    }
+  }
+
+  .constant,
+  .constant.color,
+  .keyword.other.unit,
+  .arbitrary-repetition {
+    color: #E47B60;
+  }
+
+  .constant.other.symbol {
+    color: red;
+  }
+
+  .embedded,
+  .variable,
+  .support.class,
+  .support.constant,
+  .support.function,
+  .meta.method-call,
+  .entity.name.type,
+  .entity.name.function,
+  .entity.other.attribute-name,
+  .entity.other.inherited-class,
+  .entity.name.type.class {
+    color: #cde;
+  }
+
+  .horizontal-scrollbar,
+  .vertical-scrollbar {
+    opacity: 0;
+  }
+
+  atom-text-editor-minimap::shadow .minimap-visible-area {
+    background-color: rgba(153, 187, 255, 0.5);
+  }
+
+  atom-text-editor-minimap::shadow .minimap-scroll-indicator {
+    display: none;
+  }
+
+  .wrap-guide {
+    opacity: 0;
+  }
+}
+
+atom-text-editor, atom-text-editor::shadow {
+  .highlights .highlight-selected .region {
+    border-color: #636d83;
+  }
+}
+
+.btn {
+  background-image: none;
+  background-color: hsl(200, 10%, 20%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+
+  &:hover, &:active, &:focus {
+    background-image: none;
+    background-color: hsl(200, 10%, 24%);
+  }
+
+  &:focus:active {
+    outline: none;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+
+    &:hover {
+      color: #9da5b4;
+      background-image: none;
+      background-color: hsl(200, 10%, 20%);
+    }
+  }
+}
+
+atom-text-editor[mini].is-focused {
+  background-color: hsl(200, 10%, 14%);
+  border-color: rgba(157, 165, 180, 0.6);
+  box-shadow: 0 0 0 1px rgba(157, 165, 180, 0.6);
+}
+
+atom-text-editor::shadow .editor--private {
+  .cursor {
+     border-color: white;
+  }
+}
